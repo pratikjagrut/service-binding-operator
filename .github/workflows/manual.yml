@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     env:
-      EXTRA_BEHAVE_ARGS: "--tags=@examples"
+      EXTRA_BEHAVE_ARGS: "--tags=@examples --tags=~@openshift"
 
     steps:
       - name: Checkout Git Repository
